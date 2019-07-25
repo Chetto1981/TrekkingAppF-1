@@ -1,0 +1,47 @@
+<div class="container" id="main">
+  <div id="naslov">
+    <h2>Post Blog:</h2>
+    <i class="fas fa-download"></i>
+    <i class="fas fa-cogs"></i>
+    <button type="button" class="btn btn-outline-info btn-rounded" routerLink="/addblog">Create new post</button>
+    <hr/>
+  </div>
+  <div class="container">
+    <header>
+      <div class="row">
+        <img src="./assets/slike/Marko.JPG" alt="Marko" rounded />
+        <div id="podaci">
+          <form>
+            <label for="autor">Izaberi autore:</label>
+            <br/>
+            <input type="text" id="author" name="author" placeholder="Choose author"/>
+            <br/>
+            <small><i class="far fa-lightbulb"></i>It's easy to menage your blog from your live website.Manage posts and comments, add writers & more.<a href='#'>Learn how</a></small>
+          </form>
+        </div>
+      </div>
+    </header>
+    <br/>
+    <section>
+      <div id="pregled">
+        <h5>Published(5)</h5>
+        <h5>Drafts</h5>
+      </div>
+      <hr/>
+      <div class="tabela">
+          <table class="table table-hover table-light bg-light">
+              <tbody>
+                <tr *ngFor="let blog of blogs">
+                  <td><img [src]="blog.url"></td>
+                  <td>{{blog.title}}</td>
+                  <td>{{blog.description}}</td>
+                  <td>{{blog.date}}</td>
+                </tr>
+              </tbody>
+          </table>
+          <app-addblog [blog]="currentBlog"></app-addblog>
+      </div>
+    </section>
+  </div>
+</div>
+

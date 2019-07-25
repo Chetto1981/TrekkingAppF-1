@@ -1,0 +1,51 @@
+#main{
+    background-color: rgb(201, 227, 238);
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 15px;
+}
+h2{
+    color:rgb(125, 168, 207);
+}
+h2 i{
+    display: inline;
+}
+hr{
+    border-top-color: rgb(234, 246, 246);
+}
+header{
+    background-color: rgb(248, 251, 251);
+    padding: 10px;
+}
+img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+#podaci{
+    margin-left: 15px;
+    display: block;
+    border-left: 1px solid gray;
+    padding: 5px;
+}
+input{
+    border-radius: 3px;
+}
+input:hover{
+    border-color: lightblue;
+}
+i{
+    padding: 5px;
+}
+h5{
+    display: inline;
+    padding: 10px;
+    color:whitesmoke;
+}
+h5:hover{
+    border-bottom: 2px solid rgb(29, 123, 199);
+}
+tr{
+    margin-bottom: 5px;
+}

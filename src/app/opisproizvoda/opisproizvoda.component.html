@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Product Details</h2>
+  <hr/>
+  <div class="containe p-4">
+    <div class="row">
+      <div *ngIf="proizvod">
+        <div class="col-md-8">
+          <div class="card">
+            <img class="cars-img-top" [src]="proizvod.url" alt="pantalone" title="M's Trekking Lite Pant">
+            <div class="card-block">
+              <h4 class="card-title">{{proizvod.name}}</h4>
+              <p class="card-text">${{proizvod.price}}</p>
+              <p class="card-text" *ngIf="proizvod.description">{{proizvod.description}}</p>
+              <a class="add-to-cart btn btn-primary"
+               routerLink="/cart"
+               (click)="staviUKorpu(proizvod)">Buy Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

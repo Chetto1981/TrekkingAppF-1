@@ -1,0 +1,13 @@
+form {
+    width:60%;
+  }
+input, textarea {
+    display:block;
+    width:100%;
+    padding:10px;
+    font-size:1.1em;
+    border-radius: 4px;
+  }
+h2 h4{
+    color: rgb(93, 93, 204);
+}

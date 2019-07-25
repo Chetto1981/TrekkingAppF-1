@@ -1,0 +1,17 @@
+#section{
+    background: url(/assets/slike/trekking1.jpg) no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    
+}
+#section .bckg{
+    background-color: rgba( 12, 12, 12, 0.5);
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    text-align: center;
+    padding: 150px;
+}
+.card-form{
+   opacity: 0.8;
+}

@@ -1,0 +1,25 @@
+#section{
+    background: url(/assets/slike/trekking2.jpg) no-repeat;
+    background-size: cover;
+    max-height: 620px;
+    width: 100%;
+    min-height: 620px;
+    padding: 50px;
+    
+}
+.container{
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    padding: 150px;
+    margin-top: 0;
+    color: white;
+    font-size: 1.5em; 
+}
+#text{
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    margin: auto;
+}

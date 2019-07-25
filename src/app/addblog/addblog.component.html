@@ -1,0 +1,22 @@
+<div *ngIf="blog">
+<div class="container py-5">
+  <h2>Post new blog:</h2>
+    <form name="postForm" ng-submit="" novalidate>
+      <h4>Title</h4>
+      <div class="input-group">
+        <input type="text" class="form-control" [(ngModel)]="blog.title">
+      </div>
+      <h4>Description</h4>
+      <textarea class="form-control" [(ngModel)]="blog.description" rows="10"></textarea>
+      <label for="">Featured Image URL</label>
+      <input type="text" class="form-control" [(ngModel)]="blog.url">
+      <label for="">Date</label>
+      <input type="text" class="form-control" [(ngModel)]="blog.date">
+      <br/>
+      <button type="button" 
+        class="btn btn-secondary" 
+        (click)="saveChanges()">Save</button>
+    </form>
+  </div>
+</div>
+
